@@ -1,0 +1,39 @@
+@import '../Styles/index.scss';
+
+
+.header {
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    //    color: $сFFFFFF;
+    }
+
+    &__logo-wrap {
+        display: flex;
+        align-items: center;
+        gap: .625rem;
+      
+    }
+
+    &__name {
+        @extend %font-48;
+        font-family: 'Northwell';
+    }
+
+    &__logo {
+       max-height: 70px;
+        max-width: 40px ;
+    }
+
+    &__menu-wrap {
+        display: flex;
+        gap: 1.25rem;
+        
+        .li{@extend %font-14;}
+    }
+
+    &__search-wrap {
+        display: flex;
+    }
+}

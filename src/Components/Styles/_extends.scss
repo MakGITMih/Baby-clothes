@@ -1,0 +1,78 @@
+%container-main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+%container-content {
+  max-width: 1234px;
+  margin: 0 auto;
+  padding: 3px;
+}
+
+//____________Flex__________
+
+// %flex-center {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// %flex-between {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+//____________Text__________
+
+%font-14 {
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 14px */
+  
+}
+
+%font-16 {
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+  
+}
+
+%font-48 {
+  font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+  
+}
+
+
+
+%font-64 {
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  
+}
+
+%font-h4 {
+ 
+}
+
+%font-text-main {
+  
+}
+
+%font-text {
+  
+}
+
+//____________Button__________
+
+%button { 
+
+}
