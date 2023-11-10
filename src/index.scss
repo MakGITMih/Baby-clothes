@@ -2,15 +2,25 @@
 @import './Components/Assets/Fonts/';
 @import './Components/Styles/';
 
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $cC58A46;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:$cC58A46;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $cC58A46;
+}
+
 .app {
   @extend %container-main;
   background: $cF4F3F0;
   
 }
-.app__content{
-@extend %container-content
-}
-
 
 body {
   margin: 0;

@@ -1,7 +1,7 @@
 import './header.scss'
-
+import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from './treehouse_logo.svg'
-
+import { ReactComponent as Magnifying } from './magnifying.svg'
 
 function Header() {
     return (
@@ -10,23 +10,51 @@ function Header() {
                 <div className="header__menu">
                     <div className='header__logo-wrap'>
                         <Logo className='header__logo'></Logo>
-                        <div className='header__name'>Treehouse</div>
+                        <div className='header__name'>
+                        <span className='header__letter'>M</span>ia
+                        <span className='header__letter'>M</span>onica
+                            {/* TreeHouse */}
+                            </div>
                     </div>
                     <ul className='header__menu-wrap'>
-                        <li>Магазин</li>
-                        <li>О&nbsp;нас</li>
-                        <li>Наше&nbsp;влияние</li>
-                        <li>Подарочная карта</li>
-                        <li>FAQ</li>
-                        <li>Журнал</li>
-                        <li>Контакты</li>
+                        <div className='header__menu-one'>
+                        <NavLink to={'/'} >
+                            <li>Главная</li>
+                        </NavLink>
+                        <NavLink to={'/shop'} >
+                            <li>Магазин</li>
+                        </NavLink>
+                        <NavLink to={'/team'} >
+                            <li>Команда</li>
+                        </NavLink>
+                        <NavLink to={'/impact'} >
+                            <li>О&nbsp;нас</li>
+                        </NavLink>
+                        </div>
+                        <div className='header__menu-two'>
+                        <NavLink to={'/card'} >
+                            <li>Подарочная&nbsp;карта</li>
+                        </NavLink>
+                        <NavLink to={'/faq'} >
+                            <li>FAQ</li>
+                        </NavLink>
+                        <NavLink to={'/journal'} >
+                            <li>Журнал</li>
+                        </NavLink>
+                        <NavLink to={'/contacts'} >
+                            <li>Контакты</li>
+                        </NavLink>
+                        </div>
                     </ul>
                     <div className='header__search-wrap'>
-                        ПОИСК
+                        <div className='header__search'>
+                            <input className='header__searchText' autoFocus type='text' placeholder='Поиск...' >
+                            </input>
+                            <button className='header__searchBtn'> <Magnifying className='header__magnifying'></Magnifying></button>                        
+                        </div>                    
                     </div>
                 </div>
             </section>
-
         </>
     );
 }

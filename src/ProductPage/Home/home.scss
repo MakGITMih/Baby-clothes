@@ -1,0 +1,26 @@
+@import '../../Components/Styles/index.scss';
+
+
+.home {
+
+    // min-height: 100vh;
+    
+
+    &__fullscreen {
+        min-height: 100vh;
+       
+        background-image: url('./bg.jpg');
+        background-size: cover;
+        background-position: center;
+        
+     }
+    &__wrap-header {
+       margin-bottom: 300px;
+    }
+
+    
+    &__wrap-img{
+        // width: 200px;
+        // height: 200px;
+    }
+}
