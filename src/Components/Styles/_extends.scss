@@ -6,7 +6,7 @@
 %container-content {
   max-width: 1234px;
   margin: 0 auto;
-  padding: 3px;
+  padding: 0px 3px;
 }
 
 //____________Flex__________
@@ -41,6 +41,14 @@ line-height: 140%;
   
 }
 
+%font-40 {
+  font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+ 
+}
+
 %font-48 {
   font-size: 48px;
 font-style: normal;
@@ -59,20 +67,20 @@ line-height: normal;
   
 }
 
-%font-h4 {
- 
-}
 
-%font-text-main {
-  
-}
 
-%font-text {
+// %font-text-main {
   
-}
+// }
+
+// %font-text {
+  
+// }
 
 //____________Button__________
 
 %button { 
+  border-radius: 80px;
+  padding: 18px 48px;
 
 }

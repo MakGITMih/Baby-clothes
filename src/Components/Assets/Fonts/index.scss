@@ -6,10 +6,30 @@
 }
 
 @font-face {
+  font-family: 'Northwell';
+  src: url('./GoodVibesPro.woff');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
   font-family: 'Linotype Didot Std';
-  src: url('./DidotLTPro-Headline.woff2');
+  src: url('./TeXGyreSchola-Regular.woff2');
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Northwell number';
+  src: url('./Northwell.otf');
+  font-display: swap;
+}
+
+
+
+
+
+
+
 
 
 @font-face {
@@ -27,12 +47,6 @@
 
 
 
-@font-face {
-  font-family: 'Northwell';
-  src: url('./GoodVibesPro.woff');
-  font-display: swap;
-  font-weight: 400;
-}
 
 
 
