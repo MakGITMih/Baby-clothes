@@ -1,17 +1,23 @@
-import Header from '../../Components/Header';
-import './shop.scss'
 
+import './shop.scss'
+import Header from '../../Components/Header';
+import Product from '../../Components/Product';
+import data from '../../Components/Assets/data.json'
 
 
 
 function Shop() {
+    // console.log(data);
     return (
         <>
             <section className="shop">
-            <div className="shop__wrap-header">
+                <div className="shop__wrap-header">
                     <Header></Header>
                 </div>
-           Shop
+                {data.map((item) => {
+                    return <Product {...item}></Product>
+                }
+                )}
             </section>
 
         </>

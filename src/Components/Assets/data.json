@@ -1,0 +1,159 @@
+[
+	{
+		"name": "Рубашка Березовая Песочная",
+		"price": 550,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/S9a0be9a1a35749b9a9bf37765b0f191cx.jpg_480x480.jpg",
+
+		"discount": 15,
+		"wight": "100 г",
+		"isFavorite": true,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Дубовая футболка",
+		"price": 450,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/S36d0217132f64eac9dcca9a6c2204216I.jpg_480x480.jpg",
+
+		"discount": 10,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Футболка «Ива»",
+		"price": 360,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/S2777e19aa286483f897d8ff698501971f.jpg_640x640.jpg",
+		
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Дубовая футболка Хенли",
+		"price": 300,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/S0734683a070e424ca3de5fd8d9834220R.jpg_480x480.jpg",
+
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Комбинезон в цвете Сонный синий",
+		"price": 290,
+		"description": "Описание demo",
+		"picture": "https://i.pinimg.com/474x/8e/a4/0d/8ea40d3fa4319e62adc0cdb03575c918.jpg",
+
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Комбинезон «Клен» Каньонная глина",
+		"price": 340,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/Sd429768e65c144fdacf6485903bf578eU.jpg_480x480.jpg",
+
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Комбинезон Ginkgo с кисточками",
+		"price": 490,
+		"description": "Описание demo",
+		"picture": "https://kisa.club/uploads/posts/2023-03/1679872173_kisa-club-p-stilnie-veshchi-dlya-detei-vkontakte-2.jpg",
+
+		"discount": 0,
+		"wight": "1 шт",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Дубовые брюки с кисточками",
+		"price": 330,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/HTB1wqtva0jvK1RjSspiq6AEqXXaA.jpg_640x640.jpg",
+
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Брюки Gingko цвета спелой оливы",
+		"price": 290,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/H99124859b3304215a46fadb1bdb57e98W.jpg_640x640.jpg",
+
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Дубовые брюки в темно-морском цвете",
+		"price": 330,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/Scc9ef05740024c38a2de0263590940f6Q.jpg_480x480.jpg",
+
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Дубовые шорты в морском цвете",
+		"price": 330,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/H08e2268b7fe345d989256199da805c24w.jpg_640x640.jpg",
+
+		"discount": 0,
+		"wight": "100 г",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	},
+	{
+		"name": "Шорты Willow в цвете Canyon Clay",
+		"price": 340,
+		"description": "Описание demo",
+		"picture": "https://ae04.alicdn.com/kf/Hd032921e0ee042b98471a690a30e6343Y.jpg_480x480.jpg",
+
+		"discount": 0,
+		"wight": "14 шт",
+		"isFavorite": false,
+		"isCart": false,
+		"available": true,
+		"stock": 10
+	}
+]
+

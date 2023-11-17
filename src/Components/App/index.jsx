@@ -10,6 +10,8 @@ import Journal from '../../ProductPage/Journal';
 import Shop from '../../ProductPage/Shop';
 import Team from '../../ProductPage/Team';
 
+let num = 10;
+
 function App() {
   return (
     <div className="app">

@@ -3,7 +3,6 @@ import './contacts.scss'
 
 
 
-
 function Contacts() {
     return (
         <>
@@ -11,7 +10,7 @@ function Contacts() {
             <div className="contacts__wrap-header">
                     <Header></Header>
                 </div>
-            contacts
+                Contacts
             </section>
 
         </>

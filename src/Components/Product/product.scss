@@ -1,0 +1,120 @@
+@import '../Styles/index.scss';
+
+
+.product {
+    @extend %container-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 350px;
+
+    @media (max-width: 1100px) {
+        max-width: 335px;
+    }
+
+    @media (max-width: 1050px) {
+        max-width: 320px;
+    }
+
+    @media (max-width: 1010px) {
+        max-width: 300px;
+    }
+
+    @media (max-width: 950px) {
+        max-width: 280px;
+    }
+
+    @media (max-width: 890px) {
+        max-width: 265px;
+    }
+
+    @media (max-width: 845px) {
+        max-width: 375px;
+    }
+
+    @media (max-width: 845px) {
+        max-width: 360px;
+    }
+
+    @media (max-width: 750px) {
+        max-width: 345px;
+    }
+
+    @media (max-width: 720px) {
+        max-width: 330px;
+    }
+
+    @media (max-width: 685px) {
+        max-width: 315px;
+    }
+
+    @media (max-width: 655px) {
+        max-width: 400px;
+    }
+
+
+
+    &__wrap-img {
+        width: 100%;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__wrap-block {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    &__wrap-new {
+        margin-top: 20px
+    }
+
+    &__new {
+        padding: 6px;
+        background-color: $с50735F;
+        color: $сFFFFFF;
+        text-transform: uppercase;
+        margin-top: 16px
+    }
+
+    &__name {
+        @extend %font-48;
+        font-family: 'Linotype Didot Std';
+        margin-top: 18px;
+    }
+
+    &__description {
+
+        margin-top: 16px;
+        max-width: 340px;
+
+    }
+
+
+    &__wrap-price {
+        margin-top: 25px;
+
+
+    }
+
+
+
+    &__price {
+        @extend %font-36;
+
+    }
+
+
+
+    &__wrap-svg {
+        display: flex;
+        gap: 16px;
+        margin-top: 16px;
+    }
+}

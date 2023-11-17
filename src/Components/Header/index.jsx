@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from './treehouse_logo.svg'
 import { ReactComponent as Magnifying } from './magnifying.svg'
 
+
 function Header() {
     return (
         <>
@@ -13,7 +14,6 @@ function Header() {
                         <div className='header__name'>
                         <span className='header__letter'>M</span>ia
                         <span className='header__letter'>M</span>onica
-                            {/* TreeHouse */}
                             </div>
                     </div>
                     <ul className='header__menu-wrap'>
@@ -48,7 +48,7 @@ function Header() {
                     </ul>
                     <div className='header__search-wrap'>
                         <div className='header__search'>
-                            <input className='header__searchText' autoFocus type='text' placeholder='Поиск...' >
+                            <input className='header__searchText' type='text' placeholder='Поиск...' >
                             </input>
                             <button className='header__searchBtn'> <Magnifying className='header__magnifying'></Magnifying></button>                        
                         </div>                    

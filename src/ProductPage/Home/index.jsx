@@ -8,7 +8,7 @@ import { ReactComponent as HeartCircle } from '../Home/heart-circle.svg';
 import { ReactComponent as Circle } from '../Home/circle.svg';
 import { ReactComponent as Feather } from '../Home/feather.svg';
 import { ReactComponent as Microphone } from '../Home/microphone.svg';
-// import { ReactComponent as Boys } from '../Home/Group 27.svg';
+// import { ReactComponent as Boys } from '../Home/Group 2058.svg';
 
 
 import { Link } from 'react-router-dom';
@@ -22,6 +22,8 @@ import Underwear from '../Home/underwear.jpg';
 // import Boy from '../Home/boy.jpg';
 
 function Home() {
+
+   
     return (
         <>
             <section className="home">
@@ -154,7 +156,7 @@ function Home() {
                     </div>
                 </div>
                 <div className='home__buy'>
-                  
+                 
                     <div className='home__buy-text-one'>
                     Покупайте меньше,
                     </div>
