@@ -38,12 +38,12 @@ function Product({ picture, name, description, price, novelty, isFavorite, }) {
                     <div className="product__price">
                         <span>{price}&nbsp;₽</span>
                     </div>
-                    <div >
-                        <button 
-                            ><Heart className={favorite ? 'product__active' : 'product__heart'}
+                    {/* <div > */}
+                        <button className="product__btn-heart">
+                            <Heart className={favorite ? 'product__active' : 'product__heart'}
                             onClick={() => { setFavorit(!favorite) }}></Heart>
                         </button>
-                    </div>
+                    {/* </div> */}
                 </div>
 
             </section>

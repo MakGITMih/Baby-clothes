@@ -128,9 +128,15 @@
          
     }
 
+    &__btn-heart{
+        background-color: $cF4F3F0;
+        // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
     &__heart { 
         stroke: #50735F;
         stroke: $cC58A46;
+        
     }
 
     &__wrap-svg {
