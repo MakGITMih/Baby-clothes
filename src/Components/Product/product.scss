@@ -2,11 +2,23 @@
 
 
 .product {
-    @extend %container-content;
+    // @extend %container-content;
+    // margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 350px;
+    padding: 5px;
+    
+    
+
+    &:hover {
+        border: 1px solid #50735F;
+        box-shadow: 0px 0px 8px 1px ;
+        transition: box-shadow .2s;
+    }
+    
+   
 
     @media (max-width: 1100px) {
         max-width: 335px;
@@ -56,12 +68,14 @@
 
     &__wrap-img {
         width: 100%;
+        position: relative;
     }
 
     &__img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        
     }
 
     &__wrap-block {
@@ -76,15 +90,18 @@
     }
 
     &__new {
+        position: absolute;
+        left: 0;
+        top: 16px;
         padding: 6px;
         background-color: $с50735F;
         color: $сFFFFFF;
         text-transform: uppercase;
-        margin-top: 16px
+        // margin-top: 16px
     }
 
     &__name {
-        @extend %font-48;
+        @extend %font-36;
         font-family: 'Linotype Didot Std';
         margin-top: 18px;
     }
@@ -99,7 +116,8 @@
 
     &__wrap-price {
         margin-top: 25px;
-
+       display: flex;
+       justify-content: space-between;
 
     }
 
@@ -107,14 +125,22 @@
 
     &__price {
         @extend %font-36;
-
+         
     }
 
-
+    &__heart { 
+        stroke: #50735F;
+        stroke: $cC58A46;
+    }
 
     &__wrap-svg {
         display: flex;
         gap: 16px;
         margin-top: 16px;
     }
+}
+
+.product__active {stroke: $cC58A46; 
+    fill: #50735F;
+    fill: $cC58A46;
 }

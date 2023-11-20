@@ -5,17 +5,52 @@
 .shop {
     @extend %container-content;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+
     // @media (max-width: 910px) {
     //     flex-direction: column;
     // }
 
     &__wrap-header {
         background: $с50735F;
-         @media (max-width: 910px) {
-        width: 100%;
+
+        @media (max-width: 910px) {
+            width: 100%;
+        }
     }
+
+    &__wrap-img {
+        background-image: url(./bg-shop.jpg);
+        background-position: center;
+    }
+
+    &__wrap-text {
+        text-align: center;
+        padding: 150px 0px 200px 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__text {
+        @extend %font-48;
+
+        font-family: 'Linotype Didot Std';
+        font-family: 'Northwell';
+        color: $сFFFFFF;
+    }
+
+    &__wrap-product {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+
+        @media (max-width: 910px) {
+            justify-content: center;
+        }
     }
 }

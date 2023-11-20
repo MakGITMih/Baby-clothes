@@ -49,7 +49,7 @@ function Home() {
                     <div className="home__fullscreen-footer">
                         <div className="home__fullscreen-tagline">Покупай хорошее,делай хорошее.</div>
                         <div className="home__fullscreen-scroll">
-                            <div>Вниз <Arrow className="home__arrow"></Arrow></div>
+                            <div><Arrow className="home__arrow"></Arrow></div>
                         </div>
                     </div>
                 </div>

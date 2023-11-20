@@ -14,10 +14,19 @@ function Shop() {
                 <div className="shop__wrap-header">
                     <Header></Header>
                 </div>
-                {data.map((item) => {
-                    return <Product {...item}></Product>
-                }
-                )}
+                <div className="shop__wrap-img">
+                    <div className="shop__wrap-text">
+                        <span className="shop__text">Стили, одобренные <br />детьми и природой</span>
+                    </div>
+                </div>
+                <div className="shop__wrap-product">
+                    {data.map((item) => {
+                        return <Product {...item}></Product>
+                    }
+                    )}
+                </div>
+
+
             </section>
 
         </>
