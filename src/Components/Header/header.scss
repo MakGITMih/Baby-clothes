@@ -3,9 +3,9 @@
 
 .header {
     @extend %container-content;
-    @media (max-width: 910px) {
-        flex-direction: column;
-    }
+    // @media (max-width: 475px) {
+    //     flex-direction: column;
+    // }
 
     &__menu {
         display: flex;
@@ -15,7 +15,7 @@
         margin-bottom: 10px;
         gap: 10px;
 
-        @media (max-width: 910px) {
+        @media (max-width: 768px) {
             flex-direction: column;
         }
     }
@@ -54,10 +54,15 @@
 
         li {
             @extend %font-16;
-            font-size: 18px;
+            font-size: 22px;
             position: relative;
 
-            @media (max-width: 820px) {}
+            @media (max-width: 475px) {
+                font-size: 20px;
+            }
+            @media (max-width: 430px) {
+                font-size: 18px;
+            }
 
             @media (max-width: 390px) {
                 font-size: 17px;
@@ -112,39 +117,39 @@
         gap: 10px;
     }
 
-    &__search-wrap {
-        @media (max-width: 910px) {
-            width: 70%;
-            margin-bottom: 15px;
-        }
-    }
+    // &__search-wrap {
+    //     @media (max-width: 910px) {
+    //         width: 70%;
+    //         margin-bottom: 15px;
+    //     }
+    // }
 
-    &__search {
-        display: flex;
-        gap: 5px;
-    }
+    // &__search {
+    //     display: flex;
+    //     gap: 5px;
+    // }
 
-    &__searchText {
-        @extend %font-14;
-        color: $сFFFFFF;
-        border: 1px solid $сFFFFFF;
-        padding:0PX 3px;
-        @media (max-width: 910px) {
-            width: 100%;
-        }
-    }
+    // &__searchText {
+    //     @extend %font-14;
+    //     color: $сFFFFFF;
+    //     border: 1px solid $сFFFFFF;
+    //     padding:0PX 3px;
+    //     @media (max-width: 910px) {
+    //         width: 100%;
+    //     }
+    // }
 
-    &__searchBtn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 25px;
-        width: 25px;
-    }
+    // &__searchBtn {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     height: 25px;
+    //     width: 25px;
+    // }
 
-    &__magnifying {
-        stroke: $сFFFFFF;
-    }
+    // &__magnifying {
+    //     stroke: $сFFFFFF;
+    // }
 }
 
 .active {

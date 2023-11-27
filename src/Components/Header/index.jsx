@@ -46,13 +46,13 @@ function Header() {
                         </NavLink>
                         </div>
                     </ul>
-                    <div className='header__search-wrap'>
-                        <div className='header__search'>
-                            <input className='header__searchText' type='text' placeholder='Поиск...' >
+                    {/* <div className='header__search-wrap'>
+                        <form className='header__search'>
+                            <input className='header__searchText' type='text' placeholder='Поиск...' onInput={changeInput}>
                             </input>
                             <button className='header__searchBtn'> <Magnifying className='header__magnifying'></Magnifying></button>                        
-                        </div>                    
-                    </div>
+                        </form>                    
+                    </div> */}
                 </div>
             </section>
         </>

@@ -3,7 +3,7 @@
 
 
 .shop {
-    @extend %container-content;
+    // @extend %container-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 
     &__wrap-header {
         background: $с50735F;
-
+ 
         @media (max-width: 910px) {
             width: 100%;
         }
@@ -40,6 +40,46 @@
         font-family: 'Linotype Didot Std';
         font-family: 'Northwell';
         color: $сFFFFFF;
+        
+    }
+
+    &__search-wrap {
+        display: flex;
+        justify-content: center;
+        // min-width:70%;
+        // @media (max-width: 910px) {
+        //     width: 70%;
+        //     margin-bottom: 15px;
+        // }
+    }
+
+    &__search {
+        display: flex;
+        width: 70%;
+        gap: 5px;
+    }
+
+    &__searchText {
+        @extend %font-16;
+        color: $с50735F;
+        border: 1px solid $с50735F;
+        padding:0px 3px;
+        width: 100%;
+        // @media (max-width: 910px) {
+        //     width: 100%;
+        // }
+    }
+
+    &__searchBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+    }
+
+    &__magnifying {
+        stroke: $с50735F;
     }
 
     &__wrap-product {

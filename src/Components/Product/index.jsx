@@ -14,7 +14,7 @@ import Accordion from '../Accordion';
 
 function Product({ picture, name, description, price, novelty, isFavorite, }) {
    
-    const [favorite, setFavorit] = useState(isFavorite)
+    const [isFavorites, setFavorit] = useState(isFavorite)
 
     return (
         <>
@@ -38,12 +38,12 @@ function Product({ picture, name, description, price, novelty, isFavorite, }) {
                     <div className="product__price">
                         <span>{price}&nbsp;₽</span>
                     </div>
-                    {/* <div > */}
+                    <div >
                         <button className="product__btn-heart">
-                            <Heart className={favorite ? 'product__active' : 'product__heart'}
-                            onClick={() => { setFavorit(!favorite) }}></Heart>
+                            <Heart className={isFavorites ? 'product__active' : 'product__heart'}
+                            onClick={() => { setFavorit(!isFavorites) }}></Heart>
                         </button>
-                    {/* </div> */}
+                    </div>
                 </div>
 
             </section>
