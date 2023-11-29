@@ -145,17 +145,12 @@ width: 100%;
         padding-top: 3px;
     }
 
-    // &__fullscreen-scroll {}
+    
     &__arrow{
         position: relative;
         width:25px ;
         height:25px ;
-        // padding: 10px  6px;
-        // background-color: $cC58A46;
-        // background-color: $с50735F;
-      
-        // border-radius: 50%;
-          animation: arrow 2s infinite;
+        animation: arrow 2s infinite;
     }
 
     @keyframes arrow {
@@ -270,7 +265,7 @@ width: 100%;
     &__eduardo-text {
         @extend %font-48;
         font-size: 32px;
-        font-family: Northwell;
+        font-family: 'Northwell';
         max-width: 174px;
         text-align: right;
         color: $cC58A46;
@@ -304,13 +299,13 @@ width: 100%;
 
     &__hi-title-one {
         @extend %font-48;
-        font-family: Linotype Didot Std;
+        font-family: 'Linotype Didot Std';
         
     }
 
     &__hi-title-two {
         @extend %font-48;
-        font-family: Linotype Didot Std;
+        font-family: 'Linotype Didot Std';
         margin-bottom: 16px;
     }
 

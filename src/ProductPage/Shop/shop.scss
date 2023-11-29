@@ -1,6 +1,9 @@
 @import '../../Components/Styles/index.scss';
 
-
+$сFFFFFF: #FFFFFF;
+$с50735F: #50735F;
+$cF4F3F0: #F4F3F0;
+$cC58A46: #C58A46;
 
 .shop {
     // @extend %container-content;
@@ -43,9 +46,68 @@
         
     }
 
+    
+    &__wrap-discount {
+        @extend %container-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    &__discount-text{
+        @extend %font-48;
+        font-family: 'Linotype Didot Std';
+        text-align: center;
+        
+        span {
+            @extend %font-64;
+            // font-size: 80px;
+            display: inline-block;
+            font-family: 'Northwell number';
+            transform: rotate(-19.803deg);
+            color: #C58A46;
+            max-height: 64px;
+        }
+    }
+
+    &__wrap-btn {
+           
+        // @media (max-width: 768px) {
+        //     display: flex;
+        // justify-content: center;
+        // padding-left: 0px;
+        //    }
+    }
+
+
+    &__btn {
+       
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 80px;
+        padding: 18px 28px;
+        background: $cC58A46;
+    }
+    
+    &__btn-text {
+        
+        text-transform: uppercase;
+        color:$сFFFFFF ;
+    }
+
+    &__btn-arrow {
+        transform: rotate(-90deg);
+    }
+
     &__search-wrap {
         display: flex;
         justify-content: center;
+        margin-top: 40px;
         // min-width:70%;
         // @media (max-width: 910px) {
         //     width: 70%;
@@ -93,4 +155,132 @@
             justify-content: center;
         }
     }
+}
+
+//-----------------MODAL--------------
+
+.shop {
+
+    &__wrap-modal {
+        display: flex;
+        @media (max-width:730px) {
+           flex-wrap: wrap;
+        }
+        
+    }
+    &__wrap-logo {
+       position: relative;
+       margin-top: -5px;
+        max-height: 70px;
+    max-width: 40px;
+    @media (max-width:730px) {
+        display: none;
+      }
+    }
+   
+    &__modal-img {
+        min-height: 100%;
+        width: 100%;
+        @media (max-width:730px) {
+           max-height: 350px;
+            object-fit: cover;
+         }
+         @media (max-width:480px) {
+            max-height: 300px;
+             object-fit: cover;
+          }
+          @media (max-width:380px) {
+            max-height: 250px;
+             object-fit: cover;
+          }
+        
+        img{
+            height: 100%;
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            border-radius: 20px 0px 0px 20px;
+            @media (max-width:730px) {
+                border-radius:20px 20px 0px 0px;
+              }
+        }
+    }
+
+    &__wrap-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        text-align: left;
+        padding: 20px;
+        @media (max-width:595px) {
+            padding: 20px 3px;
+          }
+    }
+
+    &__modal-title {
+        @extend %font-48;
+        line-height: 60%;
+        font-family: 'Linotype Didot Std';
+        color: $с50735F;
+        @media (max-width:895px) {
+            line-height: 100%;
+            // text-align: center;
+        }
+
+        span {
+            @extend %font-64;
+            // font-size: 60px;
+            position: relative;
+            display: inline-block;
+           bottom: 15px;
+            font-family: 'Northwell number';
+            transform: rotate(-19.803deg);
+            color: #C58A46;
+            max-height: 64px;
+            @media (max-width:895px) { 
+                bottom:-4px;
+            }
+            @media (max-width:730px) {
+                bottom:0px;
+              }
+              @media (max-width:560px) {
+                bottom:-4px;
+              }
+        }
+    }
+
+    &__modal-text {
+        margin-top: 16px;
+    }
+
+    &__wrap-email {
+      width: 100%;
+    }
+
+    &__email {
+       display: flex;
+       flex-direction: column;
+       margin-top: 16px;
+    }
+
+    &__email-text {
+        @extend %font-16;
+        color: $с50735F;
+        border: 1px solid $с50735F;
+        padding:18px 3px;
+        border-radius: 8px;
+    }
+
+    &__email-btn {
+        border-radius: 8px;
+        padding: 18px;
+        background-color: #C58A46;
+       margin-top: 18px;
+    }
+
+    &__btn-text {
+        color: #FFFFFF;
+    }
+
 }

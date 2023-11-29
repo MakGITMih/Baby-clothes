@@ -44,7 +44,7 @@ useEffect (() => {
       <div className='app__content'>
         {/* <SearchInfo searchText={''} searchCount={''} ></SearchInfo> */}
         <Routes>
-        <Route path='/' element = {<Home></Home>}></Route>
+        {/* <Route path='/' element = {<Home></Home>}></Route> */}
         <Route path='/faq' element = {<Faq></Faq>}></Route>
         <Route path='/contacts' element = {<Contacts></Contacts>}></Route>
         <Route path='/journal' element = {<Journal></Journal>}></Route>

@@ -1,7 +1,7 @@
 import './header.scss'
 import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from './treehouse_logo.svg'
-import { ReactComponent as Magnifying } from './magnifying.svg'
+// import { ReactComponent as Magnifying } from './magnifying.svg'
 
 
 function Header() {
