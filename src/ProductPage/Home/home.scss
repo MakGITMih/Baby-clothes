@@ -677,6 +677,7 @@ padding-top: 10px;
         font-weight: 400;
         line-height: 100%; 
         text-transform: uppercase;
+        margin-top: 40px;
         @media (max-width:890px) {
             font-size: 60px;
            }
@@ -691,6 +692,24 @@ padding-top: 10px;
            }
            
 		}
+        &__buy-img {
+            position: relative;
+            padding-left: 40%;
+            margin-bottom: -13px;
+            @media (max-width:890px) {
+                margin-bottom: -10px;
+               }
+               @media (max-width:760px) {
+               height: 120px;
+               }
+               @media (max-width:640px) {
+                margin-bottom: -7px;
+                }
+                @media (max-width:505px) {
+                    height: 70px;
+                    margin-bottom: -4px;
+                    }
+        }
 
 		&__buy-text-one {
             text-align: left;

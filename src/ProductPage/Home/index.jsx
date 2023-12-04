@@ -1,5 +1,8 @@
-import Header from '../../Components/Header';
 import './home.scss'
+
+import Header from '../../Components/Header';
+import SliderHome from '../../Components/SliderHome';
+
 import { ReactComponent as Arrow } from '../../Components/Assets/Images/arrow.svg';
 import { ReactComponent as Fern } from '../Home/fern.svg';
 import { ReactComponent as Magic } from '../Home/magic.svg';
@@ -8,10 +11,10 @@ import { ReactComponent as HeartCircle } from '../Home/heart-circle.svg';
 import { ReactComponent as Circle } from '../Home/circle.svg';
 import { ReactComponent as Feather } from '../Home/feather.svg';
 import { ReactComponent as Microphone } from '../Home/microphone.svg';
-// import { ReactComponent as Boys } from '../Home/Group 2058.svg';
-
+// import { ReactComponent as Boys } from '../Home/Group 2059.svg';
 
 import { Link } from 'react-router-dom';
+
 import Ferns from '../Home/ferns.jpg';
 import Eduardo from '../Home/eduardo.jpg';
 import Hands from '../Home/hands.jpg';
@@ -19,7 +22,7 @@ import Girlfriends from '../Home/girlfriends.jpg';
 import Looking from '../Home/looking.jpg';
 import Percent from '../Home/percent.jpg';
 import Underwear from '../Home/underwear.jpg';
-// import Boy from '../Home/boy.jpg';
+import Boy from '../Home/Group 2059.jpg';
 
 function Home() {
 
@@ -156,7 +159,8 @@ function Home() {
                     </div>
                 </div>
                 <div className='home__buy'>
-                 
+                    <img  className='home__buy-img' src={Boy} alt="" />
+                    {/* <Boys></Boys> */}
                     <div className='home__buy-text-one'>
                     Покупайте меньше,
                     </div>
@@ -164,6 +168,9 @@ function Home() {
                      покупайте лучше
                     </div>
                 </div>
+                <SliderHome></SliderHome>
+              
+              
             </section>
         </>
     );

@@ -1,0 +1,200 @@
+@import '../Styles/index.scss';
+
+$сFFFFFF: #FFFFFF;
+$с50735F: #50735F;
+$cF4F3F0: #F4F3F0;
+$cC58A46: #C58A46;
+
+
+
+
+
+
+
+
+.sliderhome {
+  &__wrap {
+    @extend %container-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+
+    @media (max-width:760px) {
+      margin-top: 60px;
+    }
+  }
+
+  &__subtitle {
+    @extend %font-16;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @extend %font-48;
+    font-family: 'Linotype Didot Std';
+  }
+}
+
+
+
+.swiper {
+  @extend %container-content;
+  margin-top: 40px;
+
+  &-slide {
+    img {
+      height: 400px;
+      object-fit: cover;
+
+      @media (max-width: 1024px) {
+        height: 350px;
+      }
+
+      @media (max-width: 630px) {
+        height: 300px;
+      }
+
+      @media (max-width: 375px) {
+        height: 300px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__wrap-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    button {
+      border: 2px solid #50735F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      border-radius: 50%;
+
+    }
+  }
+
+  &__arrow-prev {
+    stroke: $сFFFFFF;
+    stroke: $с50735F;
+    transform: rotate(90deg);
+
+  }
+
+  &__arrow-next {
+    stroke: $сFFFFFF;
+    stroke: $с50735F;
+
+    transform: rotate(-90deg);
+  }
+
+}
+
+.swiper {
+  // width: 100%;
+  // height: 100%;
+  // display: flex;
+
+}
+
+.swiper-wrapper {
+  // height: 400px;
+}
+
+.swiper-slide {
+  //  height: 100%;
+  //  width: 100%;
+  //   min-height: 400px;
+  // min-height: 100%;
+  // height: 400px;
+}
+
+// .swiper-slide img {
+//   height: 400px;
+
+//  object-fit: cover;
+// }
+
+.sliderhome {
+
+  &__container-svg {
+    position: relative;
+    background: #D9C7BB;
+    height: 350px;
+    margin-top: -280px;
+    margin-bottom: 120px;
+  }
+
+  &__svg {
+    position: absolute;
+    width: 192px;
+    height: 150px;
+    // transform: rotate(10deg);
+    bottom: -70px;
+    left: -30px;
+  }
+}
+
+//   .swiper__wrap-btn button {
+//     width: 60px;
+//     height: 50px;
+//     border-radius: 50px;
+//     border: none;
+//     outline: none;
+//     background-color: hsl(210, 100%, 50%);
+//     color: #fff;
+//     margin: 0px 0.5rem;
+//     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+//     margin-top: 30px;
+//     transition: all .5s;
+
+//   }
+
+//   .swiper__arrow-prev{ }
+//   .swiper__arrow-next{}
+
+//   .swiper-nav-btns button:hover {
+//     background-color: hsl(210, 100%, 40%);
+//     cursor: pointer;
+//   }
+
+//   .res-slide:nth-child(1) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444282/samples/landscapes/nature-mountains.jpg");
+//   }
+
+//   .res-slide:nth-child(2) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444278/samples/landscapes/beach-boat.jpg");
+//   }
+
+//   .res-slide:nth-child(3) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444275/samples/landscapes/girl-urban-view.jpg");
+//   }
+
+//   .res-slide:nth-child(4) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444277/samples/animals/three-dogs.jpg");
+//   }
+
+//   .res-slide:nth-child(5) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444273/samples/animals/reindeer.jpg");
+//   }
+
+//   .res-slide:nth-child(6) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444278/samples/people/bicycle.jpg");
+//   }
+
+//   .res-slide:nth-child(7) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444279/samples/ecommerce/leather-bag-gray.jpg");
+//   }
+
+//   .res-slide:nth-child(8) {
+//     background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444271/samples/ecommerce/analog-classic.jpg");
+//   }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
