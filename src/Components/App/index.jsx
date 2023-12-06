@@ -34,7 +34,6 @@ useEffect (() => {
   item.name.toUpperCase().includes(searchQuery.toUpperCase())
   );
   setCards(filteredCards);
-  // console.log(filteredCards);
 },[searchQuery] )
 
 
@@ -42,9 +41,9 @@ useEffect (() => {
   return (
     <div className="app">
       <div className='app__content'>
-        {/* <SearchInfo searchText={''} searchCount={''} ></SearchInfo> */}
+        {/* <SearchInfo searchText={searchQuery} searchCount={cards.length} ></SearchInfo> */}
         <Routes>
-        {/* <Route path='/' element = {<Home></Home>}></Route> */}
+        <Route path='/' element = {<Home></Home>}></Route>
         <Route path='/faq' element = {<Faq></Faq>}></Route>
         <Route path='/contacts' element = {<Contacts></Contacts>}></Route>
         <Route path='/journal' element = {<Journal></Journal>}></Route>
