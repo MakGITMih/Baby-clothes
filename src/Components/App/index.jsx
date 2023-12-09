@@ -48,7 +48,13 @@ useEffect (() => {
         <Route path='/contacts' element = {<Contacts></Contacts>}></Route>
         <Route path='/journal' element = {<Journal></Journal>}></Route>
         <Route path='/impact' element = {<Impact></Impact>}></Route>
-        <Route path='/shop' element = {<Shop data={cards} changeInput ={handleInput}></Shop>}></Route>
+        <Route path='/shop' element = {<Shop 
+        data={cards} 
+        changeInput ={handleInput}
+        searchText={searchQuery}
+        searchCount={cards.length}>
+        
+        </Shop>}></Route>
         <Route path='/team' element = {<Team></Team>}></Route>
         <Route path='/card' element = {<Card></Card>}></Route> 
         <Route path='*' element = {<Home></Home>}></Route>

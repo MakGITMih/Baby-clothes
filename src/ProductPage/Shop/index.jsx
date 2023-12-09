@@ -9,9 +9,10 @@ import { ReactComponent as Logo } from './treehouse_logo.svg'
 import { ReactComponent as Magnifying } from './magnifying.svg'
 
 import ModalFoto from '../Shop/modal.jpg';
+// import SearchInfo from '../../Components/SearchInfo';
 
 
-function Shop({ data, changeInput }) {
+function Shop({ data, changeInput,searchText,searchCount }) {
 
     const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
 
@@ -21,6 +22,7 @@ function Shop({ data, changeInput }) {
                 <div className="shop__wrap-header">
                     <Header></Header>
                 </div>
+                
                 <div className="shop__wrap-img">
                     <div className="shop__wrap-text">
                         <span className="shop__text">Стили, одобренные <br />детьми и природой</span>
@@ -62,6 +64,7 @@ function Shop({ data, changeInput }) {
                             </div>
 
                         </Modal>
+                       
                     </div>
                 </div>
                 <div className='shop__search-wrap'>
@@ -75,12 +78,18 @@ function Shop({ data, changeInput }) {
                                  </button>                         */}
                     </form>
                 </div>
+
+                {searchText && <section className="searchInfo">
+                По запросу <span>{searchText}</span> найдено {searchCount} товаров
+            </section>}
+
                 <div className="shop__wrap-product">
                     {data.map((item) => {
                         return <Product {...item} key={item.picture}></Product>
                     }
                     )}
                 </div>
+                
             </section>
         </>
     );
