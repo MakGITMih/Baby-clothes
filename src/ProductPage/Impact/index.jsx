@@ -10,6 +10,12 @@ import { ReactComponent as Group2087 } from '../Impact/Group 2087.svg';
 import { ReactComponent as Group2095 } from '../Impact/Group 2095.svg';
 import { ReactComponent as Arrow } from '../../Components/Assets/Images/arrow.svg';
 import { ReactComponent as Group2094 } from '../Impact/Group 2094.svg';
+import { ReactComponent as Leaf2 } from '../Impact/leaf 2.svg';
+import { ReactComponent as Group2076 } from '../Impact/Group 2076.svg';
+import { ReactComponent as Group2097 } from '../Impact/Group 2097.svg';
+
+
+
 
 
 
@@ -18,6 +24,9 @@ import Victoria from '../Impact/victoria-nazaruk.jpg'
 import Nicolic from '../Impact/nickolas-nikolic.jpg'
 import Bodnar from '../Impact/ethan-bodnar.jpg'
 import Group2093 from '../Impact/Group 2093.jpg'
+import O222 from '../Impact/0-222.jpg'
+import Jacqueline from '../Impact/jacqueline-munguia.jpg'
+import Karina from '../Impact/karina-tess.jpg'
 
 
 function Impact() {
@@ -119,9 +128,67 @@ function Impact() {
                         <img src={Group2093} alt="" />
                     </div>
                     <div className="impact__champion_text">
-                   
                     отстаивайте свои ценности
                     </div>
+                </div>
+                <div className="impact__people">
+                    <div className="impact__people_left">
+                        <div className="impact__people_wrap-content">
+                            <div className="impact__people_title">Люди</div>
+                            <div className="impact__people_subtitle">рабочие нанимаются на месте,
+                                98% из них живут не дальше
+                                более 10 км от производства
+                            </div>
+                            <div className="impact__people_text">
+                                Те, кто кроит, шьет и красит нашу одежду, — настоящие ремесленники, которых уважают, они хорошо оплачиваются и работают в здоровых и безопасных условиях. Они пользуются всеми льготами, связанными с их уважаемой профессией, включая льготы по медицинскому обслуживанию и оплачиваемый отпуск.
+                            </div>
+                        </div>
+                        <div className="impact__people_wrap-img">
+                            <img src={Jacqueline} alt="" />
+                        </div>
+                    </div>
+                    <div className="impact__people_right">
+                        <div className="impact__people_leaf"><Leaf2></Leaf2></div>
+                        <div>< img src={O222} alt="" /></div>
+                    </div>
+                </div>
+                <div className="impact__packaging">
+                    <div className="impact__packaging_wrap-img">
+                        <img src={Karina} alt="" />
+                    </div>
+                    <div className="impact__packaging_wrap-content">
+                        <div className="impact__packaging_wrap-block">
+                            <div className="impact__packaging_wrap-svg">
+                                <div className="impact__packaging_group2076"><Group2076></Group2076>
+                                </div>
+                                <div className="impact__packaging_group2097"><Group2097></Group2097>
+                                </div>
+                            </div>
+                            <div className="impact__packaging_title">
+                                Упаковка
+                            </div>
+                            <div className="impact__packaging_subtitle">
+                            Вопрос ответственной упаковки является постоянно меняющейся целью.
+                            </div>
+                            <div className="impact__packaging_text">
+                            Мы уделяем пристальное внимание воздействию наших упаковочных материалов. Мы стремимся отказаться от пластика и свести к минимуму всю ненужную упаковку. Материалы, которые мы используем для поддержания чистоты и безопасности ваших вещей, полностью биоразлагаемы.
+                            </div>
+                        </div>
+                        <div className="impact__packaging_wrap-kind">
+                            <div className="impact__packaging_k">*</div>
+                            <div className="impact__packaging_kind">У каждого бренда есть выбор, и наш выбор — быть добрыми.</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="impact__seriously">
+                    <div className="impact__seriously_text" >
+                    Мы заботимся об окружающей среде так же, как и о людях, участвующих в производстве наших коллекций. Это обязательство, к которому мы относимся серьезно.
+                    </div>
+                    <div className="impact__seriously_wrap-btn">
+                            <Link to={'/journal'} >
+                                <button className="impact__seriously_btn">ЧИТАТЬ ДАЛЕЕ<Arrow className="impact__seriously_arrow"></Arrow></button>
+                            </Link>
+                        </div>
                 </div>
             </section>
         </>

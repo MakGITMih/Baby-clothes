@@ -190,11 +190,11 @@ function Team() {
                                             +
                                         </div>
                                         <div className="team__chat_announcement-blocktext">
-                                            <div>Медленно и устойчиво</div>
+                                            <div>Устойчивая мода</div>
                                             <div>Органические ткани</div>
                                             <div>Комфорт малышей</div>
                                             <div>Носите свои ценности</div>
-                                            <div>Заплати ЕЕ</div>
+                                            <div>Честная цена</div>
                                             <div>Прогресс</div>
                                         </div>
                                     </div>

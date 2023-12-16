@@ -1,9 +1,269 @@
 @import '../../Components/Styles/index.scss';
 
 
+
+$сFFFFFF: #FFFFFF;
+$с50735F: #50735F;
+$cF4F3F0: #F4F3F0;
+$cC58A46: #C58A46;
+$cADBBC4: #ADBBC4;
+$cD9C7BB: #D9C7BB;
+
+
 .contacts {
 
     &__wrap-header {
         background: $с50735F;
+    }
+}
+
+//-------------------------------
+
+.contacts {
+
+    &__social {
+        position: relative;
+        @extend %container-content;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        @media (max-width:890px) {
+           flex-direction: column;
+        //    justify-content: center;
+        //    align-items: center;
+        }
+
+
+
+        &_block-left {
+            max-width: 360px;
+            @media (max-width:890px) {
+                max-width: 100%;
+             }
+        }
+
+        // &_wrap-svg {}
+
+        &_group2090 {
+            margin-top: -30px;
+            margin-left: 10px;
+        }
+
+        &_subtitle {
+            @extend %font-16;
+            text-transform: uppercase;
+            margin-top: 16px;
+        }
+
+        &_title {
+            @extend %font-48;
+            font-family: 'Linotype Didot Std';
+            margin-top: 16px;
+            @media (max-width:345px) {
+                font-size: 42px;
+            }
+        }
+
+        &_text {
+            @extend %font-16;
+            margin-top: 16px;
+        }
+
+
+        &_email-text {
+            @extend %font-16;
+            text-transform: uppercase;
+            color: $cC58A46;
+            margin-top: 60px;
+            @media (max-width:890px) {
+                margin-top: 20px;
+            }
+        }
+
+        &_email {
+            @extend %font-36;
+            text-transform: uppercase;
+            margin-top: 16px;
+        }
+
+        &_question {
+            @extend %font-16;
+            margin-top: 16px;
+        }
+
+
+        &_block-center {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            transform: rotate(-18deg);
+            top: 43%;
+            left: 20%;
+            @media (max-width:1120px) {
+                top: 44%;
+                transform: rotate(-24deg);
+            }
+            @media (max-width:890px) {
+                position: static;
+                transform: rotate(12deg);
+                margin-top: 80px;
+             }
+             @media (max-width:620px) {
+                margin-top: 50px;
+             }
+             @media (max-width:550px) {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+             }
+        }
+
+        &_group2086 {
+            @media (max-width:890px) {
+                transform: rotate(90deg);
+                
+            }
+        }
+
+        &_feel {
+            @extend %font-48;
+            font-family: 'Northwell';
+            color: $cC58A46;
+            @media (max-width:1120px) {
+                font-size: 42px;
+            }
+            @media (max-width:975px) {
+                font-size: 36px;
+            }
+            @media (max-width:890px) {
+                padding-top: 35px;
+            }
+            @media (max-width:550px) {
+                padding-top: 0px;
+            }
+        }
+
+        &_block-right {
+            display: flex;
+            align-items: flex-end;
+        }
+
+
+        &_group2081 {
+            min-width: 631px;
+            @media (max-width:975px) {
+                min-width: 550px;
+            }
+            @media (max-width:890px) {
+                min-width: 100%;
+                text-align: center;
+                margin-top: -90px;
+                
+            }
+            @media (max-width:550px) {
+                margin-top: -30px;
+             }
+        }
+
+
+        &_block-right {
+            position: relative;
+        }
+        
+        &_content {
+            display: flex;
+            gap: 42%;
+            position: absolute;
+            top: 45%;
+            right: 40%;
+            @media (max-width:910px) {
+                top: 53%;
+            }
+            @media (max-width:890px) {
+                top: 23%;
+                right: 43%;
+            }
+            @media (max-width:660px) {
+                // right: 39%;
+            }
+            @media (max-width:550px) {
+                top: 35%;
+            }
+            @media (max-width:485px) {  
+                right: 33%;   
+            }
+            @media (max-width:450px) {
+                top: 25%;
+            }
+            @media (max-width:390px) {
+                right: 25%;
+            }
+            @media (max-width:345px) {
+                right: 23%;
+                top: 18%;
+            }
+            @media (max-width:335px) {
+                right: 18%;
+            }
+        }
+
+        &_wrap-social {   
+            
+            @extend %font-16;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+            transform: rotate(-3.636deg);
+            margin-left: -10%;
+            
+            // :hover {
+            //     transform: scale(1.5);
+            // }
+        }
+
+        &_our {
+            color: $cC58A46;
+            text-transform: uppercase;
+        }
+        &_name {
+            
+            :hover {
+                transform: scale(1.1);
+                transition: transform .4s;
+            }
+        }
+
+        &_wrap-time {
+            @extend %font-16;         
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+            transform: rotate(5.935deg);
+            margin-top: -10%;
+            margin-left: 10%;
+            @media (max-width:485px) {
+                margin-left: -10%;
+            }
+            @media (max-width:390px) {
+                margin-left: -25%;
+            }
+            @media (max-width:335px) {
+                margin-left: -32%;
+            }
+        }
+
+        &_time {
+            color: $cC58A46;
+            text-transform: uppercase;
+            
+        }
+
+        // &_group2081 {
+        // }
+
+
+
     }
 }

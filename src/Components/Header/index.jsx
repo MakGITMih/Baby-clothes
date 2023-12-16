@@ -32,6 +32,9 @@ function Header() {
                         </NavLink>
                         </div>
                         <div className='header__menu-two'>
+                        <NavLink to={'/contacts'} >
+                            <li>Контакты</li>
+                        </NavLink>
                         <NavLink to={'/card'} >
                             <li>Подарочная&nbsp;карта</li>
                         </NavLink>
@@ -40,9 +43,6 @@ function Header() {
                         </NavLink>
                         <NavLink to={'/journal'} >
                             <li>Журнал</li>
-                        </NavLink>
-                        <NavLink to={'/contacts'} >
-                            <li>Контакты</li>
                         </NavLink>
                         </div>
                     </ul>

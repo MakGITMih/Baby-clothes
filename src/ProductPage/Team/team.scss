@@ -460,7 +460,7 @@ $cADBBC4: #ADBBC4;
         &_wrap-text {
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content: flex-end;
             padding-left: 5%;
             max-width: 480px;
 
@@ -523,9 +523,11 @@ $cADBBC4: #ADBBC4;
 .team {
 
     &__boyteam {
+        
 
         &_wrap {
             padding-left: 60%;
+            margin-top: 40px;
         }
     }
 }
@@ -928,3 +930,4 @@ $cADBBC4: #ADBBC4;
         }
     }
 }
+

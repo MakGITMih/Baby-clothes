@@ -17,9 +17,10 @@ function Footer() {
     const scrollToTop = () => {
         scroll.scrollToTop();
       };
-    const handleClick = (e) => {
-        e.preventDefault();
-    };
+
+    // const handleClick = (e) => {
+    //     e.preventDefault();
+    // };
 
     return (
         <>
@@ -69,7 +70,7 @@ function Footer() {
                             <div className="footer__subtitle">СОЦСЕТИ</div>
                             <div className="footer__block-text">
                             <a href="https://vk.com/" rel="noreferrer" target='_blank'>
-                                <span>ВКонтакте</span>
+                                <span className='footer__social_name'>ВКонтакте</span>
                                 </a>
                                 <a href="https://www.instagram.com/" rel="noreferrer" target='_blank'>
                                 <span>Instagram</span>

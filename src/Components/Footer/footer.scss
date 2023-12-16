@@ -220,6 +220,10 @@ text-transform: uppercase;
             display: flex;
             flex-direction: column;
             gap: 10px;
+            :hover {
+                transform: scale(1.1);
+                transition: transform .4s;
+            }
 		}
 
 
