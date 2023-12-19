@@ -19,13 +19,17 @@
 .app {
   @extend %container-main;
   background: $cF4F3F0;
-  
 }
+// .app__content {
+//   // overflow-x: hidden;
+// }
 
 body {
   margin: 0;
   font-family: 'GT Cinetype Trial',sans-serif;
   color: $с50735F;
+  
+    
   
   
   // $cF4F3F0: #F4F3F0;;

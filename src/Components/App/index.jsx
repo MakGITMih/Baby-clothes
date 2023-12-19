@@ -3,9 +3,10 @@ import './app.scss';
 
 import data from '../Assets/data.json'
 
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import React, {useEffect, useState} from 'react'
 
+import ScrollRestoration from '../ScrollRestoration';
 import Card from '../../ProductPage/Card';
 import Contacts from '../../ProductPage/Contacts';
 import Faq from '../../ProductPage/Faq';
@@ -39,30 +40,33 @@ useEffect (() => {
 
 
   return (
+<BrowserRouter>
+<ScrollRestoration></ScrollRestoration>
     <div className="app">
       <div className='app__content'>
         {/* <SearchInfo searchText={searchQuery} searchCount={cards.length} ></SearchInfo> */}
-        <Routes>
-        <Route path='/' element = {<Home></Home>}></Route>
-        <Route path='/faq' element = {<Faq></Faq>}></Route>
-        <Route path='/contacts' element = {<Contacts></Contacts>}></Route>
-        <Route path='/journal' element = {<Journal></Journal>}></Route>
-        <Route path='/impact' element = {<Impact></Impact>}></Route>
-        <Route path='/shop' element = {<Shop 
-        data={cards} 
-        changeInput ={handleInput}
-        searchText={searchQuery}
-        searchCount={cards.length}>
-        
-        </Shop>}></Route>
-        <Route path='/team' element = {<Team></Team>}></Route>
-        <Route path='/card' element = {<Card></Card>}></Route> 
-        <Route path='*' element = {<Home></Home>}></Route>
-        </Routes>
+          <Routes>
+            <Route path='/' element={<Home></Home>}></Route>
+            <Route path='/faq' element={<Faq></Faq>}></Route>
+            <Route path='/contacts' element={<Contacts></Contacts>}></Route>
+            <Route path='/journal' element={<Journal></Journal>}></Route>
+            <Route path='/impact' element={<Impact></Impact>}></Route>
+            <Route path='/shop' element={<Shop
+              data={cards}
+              changeInput={handleInput}
+              searchText={searchQuery}
+              searchCount={cards.length}>
+            </Shop>}></Route>
+            <Route path='/team' element={<Team></Team>}></Route>
+            <Route path='/card' element={<Card></Card>}></Route>
+            <Route path='*' element={<Home></Home>}></Route>
+          </Routes>
         <Footer></Footer>
         </div>
     </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
