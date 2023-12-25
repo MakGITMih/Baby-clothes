@@ -14,6 +14,7 @@ import { ReactComponent as Group2076 } from '../Contacts/Group 2076.svg';
 
 import Shutterstock from '../Contacts/shutterstock.jpg';
 import Edi from '../Contacts/edi-libedinsky.jpg';
+import MapYandex from '../../Components/MapYandex';
 
 
 // import Konev from '../Impact/evgeniy-konev.jpg'
@@ -109,6 +110,9 @@ function Contacts() {
                     </div>
 
                 </div>
+                <div className='contacts__come'>Или просто заходите!</div>
+                <MapYandex></MapYandex>
+                
             </section>
 
         </>

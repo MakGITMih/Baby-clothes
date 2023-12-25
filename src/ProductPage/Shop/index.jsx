@@ -16,6 +16,7 @@ function Shop({ data, changeInput,searchText,searchCount }) {
 
     const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
 
+
     return (
         <>
             <section className="shop">

@@ -11,6 +11,7 @@ $cD9C7BB: #D9C7BB;
 
 
 .contacts {
+   
 
     &__wrap-header {
         background: $с50735F;
@@ -461,9 +462,22 @@ $cD9C7BB: #D9C7BB;
          margin-left: 40px;
         } 
         }
+        &_come {
+            @extend %font-48;
+            font-family: 'Linotype Didot Std';
+        }
     }
 }
 
+.contacts {
+
+    &__come {
+        @extend %font-48;
+            font-family: 'Linotype Didot Std';
+            text-align: center;
+            margin-bottom: 20px;
+    }
+}
 
 // &__wrap-btn {
 
